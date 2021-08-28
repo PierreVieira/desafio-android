@@ -4,7 +4,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 
-interface PicPayService {
+interface PicPayApiService {
 
     @GET("users")
     fun getUsers(): Call<List<User>>

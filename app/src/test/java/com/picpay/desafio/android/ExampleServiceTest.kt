@@ -9,7 +9,7 @@ import retrofit2.Response
 
 class ExampleServiceTest {
 
-    private val api = mock<PicPayService>()
+    private val api = mock<PicPayApiService>()
 
     private val service = ExampleService(api)
 

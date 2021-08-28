@@ -1,11 +1,11 @@
 package com.picpay.desafio.android
 
 class ExampleService(
-    private val service: PicPayService
+    private val apiService: PicPayApiService
 ) {
 
     fun example(): List<User> {
-        val users = service.getUsers().execute()
+        val users = apiService.getUsers().execute()
 
         return users.body() ?: emptyList()
     }
