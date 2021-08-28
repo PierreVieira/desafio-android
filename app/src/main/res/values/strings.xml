@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">PicPay</string>
-    <string name="title">Contatos</string>
-    <string name="error">Ocorreu um erro. Tente novamente.</string>
-
+    <string name="title">Contacts</string>
+    <string name="error">An error has occurred. Try again.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 </resources>

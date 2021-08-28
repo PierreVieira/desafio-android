@@ -1,8 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-android-extensions'
     id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -39,9 +39,8 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation "androidx.core:core-ktx:$core_ktx_version"
 
@@ -50,11 +49,8 @@ dependencies {
 
     implementation "com.google.android.material:material:$material_version"
 
-    implementation "org.koin:koin-core:$koin_version"
-    implementation "org.koin:koin-android:$koin_version"
-    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
-
     implementation "com.google.dagger:dagger:$dagger_version"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
 
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
@@ -83,7 +79,6 @@ dependencies {
     testImplementation "org.mockito:mockito-core:$mockito_version"
     testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockito_kotlin_version"
     testImplementation "androidx.arch.core:core-testing:$core_testing_version"
-    implementation "org.koin:koin-test:$koin_version"
 
     androidTestImplementation "androidx.test:runner:$test_runner_version"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
