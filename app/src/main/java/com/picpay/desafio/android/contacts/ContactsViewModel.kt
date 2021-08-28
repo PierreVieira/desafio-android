@@ -17,10 +17,10 @@ class ContactsViewModel : ViewModel() {
     val users: LiveData<List<User>> = _users
 
     init {
-        getUsers()
+        getUsersFromServer()
     }
 
-    private fun getUsers() {
+    fun getUsersFromServer() {
         viewModelScope.launch {
             _status.value = ApiStatus.LOADING
             try {

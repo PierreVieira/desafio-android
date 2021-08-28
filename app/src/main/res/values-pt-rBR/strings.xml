@@ -3,4 +3,5 @@
     <string name="app_name">PicPay</string>
     <string name="contacts">Contatos</string>
     <string name="error">Ocorreu um erro. Tente novamente.</string>
+    <string name="try_to_connect_again">Try to connect again</string>
 </resources>

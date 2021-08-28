@@ -7,6 +7,7 @@ import androidx.core.net.toUri
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.google.android.material.button.MaterialButton
 import com.picpay.desafio.android.R
 import com.picpay.desafio.android.model.User
 import com.picpay.desafio.android.network.ApiStatus
@@ -36,7 +37,7 @@ fun bindRecyclerView(recyclerView: RecyclerView, data: List<User>?) {
 }
 
 @BindingAdapter("apiStatus")
-fun bindStatus(statusImageView: ImageView, status: ApiStatus) {
+fun bindRecyclerStatus(statusImageView: ImageView, status: ApiStatus) {
     when (status) {
         ApiStatus.LOADING -> {
             statusImageView.visibility = View.VISIBLE
@@ -50,4 +51,9 @@ fun bindStatus(statusImageView: ImageView, status: ApiStatus) {
             statusImageView.visibility = View.GONE
         }
     }
+}
+
+@BindingAdapter("buttonStatus")
+fun buttonStatus(button: MaterialButton, status: ApiStatus) {
+    button.visibility = if (status == ApiStatus.ERROR) View.VISIBLE else View.GONE
 }
