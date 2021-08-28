@@ -8,9 +8,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/pierr/AndroidStudioProjects/desafio-android/app/src/main/res/drawable/ic_connection_error.xml" value="0.15555555555555556" />
+        <entry key="..\:/Users/pierr/AndroidStudioProjects/desafio-android/app/src/main/res/drawable/ic_round_account_circle.xml" value="0.15555555555555556" />
+        <entry key="..\:/Users/pierr/AndroidStudioProjects/desafio-android/app/src/main/res/drawable/loading_img.xml" value="0.15555555555555556" />
         <entry key="..\:/Users/pierr/AndroidStudioProjects/desafio-android/app/src/main/res/layout/activity_main.xml" value="0.13240740740740742" />
         <entry key="..\:/Users/pierr/AndroidStudioProjects/desafio-android/app/src/main/res/layout/fragment_contacts.xml" value="0.22112462006079028" />
         <entry key="..\:/Users/pierr/AndroidStudioProjects/desafio-android/app/src/main/res/layout/list_item_user.xml" value="0.22112462006079028" />
+        <entry key="..\:/Users/pierr/AndroidStudioProjects/desafio-android/app/src/main/res/layout/user_item.xml" value="0.10714285714285714" />
       </map>
     </option>
   </component>

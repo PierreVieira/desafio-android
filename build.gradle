@@ -10,8 +10,8 @@ buildscript {
         material_version = '1.4.0'
         moshi_version = '1.8.0'
         retrofit_version = '2.9.0'
+        moshi_version = '1.9.3'
         okhttp_version = '4.9.0'
-        picasso_version = '2.71828'
         circleimageview_version = '3.0.0'
         junit_version = '4.13.2'
         mockito_version = '3.9.0'
@@ -25,8 +25,8 @@ buildscript {
         rxjava_version = '2.2.17'
         rxandroid_version = '2.1.1'
         core_ktx_test_version = '1.4.0'
-        gson_version = '2.8.6'
         nav_version = '2.3.5'
+        coil_version = '1.1.1'
     }
 
     repositories {
