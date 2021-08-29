@@ -1,8 +1,7 @@
-package com.picpay.desafio.android.contacts.list
+package com.picpay.desafio.android.ui.contacts.list
 
 import android.view.View
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.core.net.toUri
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -12,25 +11,7 @@ import com.picpay.desafio.android.R
 import com.picpay.desafio.android.model.User
 import com.picpay.desafio.android.network.ApiStatus
 
-@BindingAdapter("imageUrl")
-fun bindImage(imageView: ImageView, imgUrl: String?) {
-    imgUrl?.let {
-        val imageUri = it.toUri().buildUpon().scheme("https").build()
-        imageView.load(imageUri) {
-            placeholder(R.drawable.ic_round_account_circle)
-            error(R.drawable.ic_broken_image)
-        }
-    }
-}
-
-@BindingAdapter("textData")
-fun bindText(textView: TextView, text: String?) {
-    text?.let {
-        textView.text = it
-    }
-}
-
-@BindingAdapter("listData")
+@BindingAdapter("contactListData")
 fun bindRecyclerView(recyclerView: RecyclerView, data: List<User>?) {
     val adapter = recyclerView.adapter as ContactsListAdapter
     adapter.submitList(data)
@@ -56,4 +37,15 @@ fun bindRecyclerStatus(statusImageView: ImageView, status: ApiStatus) {
 @BindingAdapter("buttonStatus")
 fun buttonStatus(button: MaterialButton, status: ApiStatus) {
     button.visibility = if (status == ApiStatus.ERROR) View.VISIBLE else View.GONE
+}
+
+@BindingAdapter("imageUrl")
+fun bindImage(imageView: ImageView, imgUrl: String?) {
+    imgUrl?.let {
+        val imageUri = it.toUri().buildUpon().scheme("https").build()
+        imageView.load(imageUri) {
+            placeholder(R.drawable.ic_round_account_circle)
+            error(R.drawable.ic_broken_image)
+        }
+    }
 }

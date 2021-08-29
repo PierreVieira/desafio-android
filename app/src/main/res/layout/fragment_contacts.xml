@@ -7,25 +7,22 @@
 
         <variable
             name="viewModel"
-            type="com.picpay.desafio.android.contacts.ContactsViewModel" />
+            type="com.picpay.desafio.android.ui.contacts.ContactsViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimaryDark">
+        tools:context=".ui.contacts.ContactsFragment">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/users_list"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:clipToPadding="false"
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:scrollbars="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:listData="@{viewModel.users}"
+            app:contactListData="@{viewModel.users}"
             tools:listitem="@layout/user_item" />
 
         <ImageView
@@ -33,25 +30,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:importantForAccessibility="no"
-            android:minWidth="80dp"
-            android:minHeight="80dp"
+            android:minWidth="@dimen/loading_size"
+            android:minHeight="@dimen/loading_size"
             app:apiStatus="@{viewModel.status}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/loading_animation" />
+            tools:src="@drawable/loading_animation"
+            tools:visibility="gone" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:onClick="@{() -> viewModel.getUsersFromServer()}"
-            app:buttonStatus="@{viewModel.status}"
             android:text="@string/try_to_connect_again"
-            app:layout_constraintTop_toBottomOf="@id/status_image"
+            app:buttonStatus="@{viewModel.status}"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/status_image"
+            tools:visibility="gone" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

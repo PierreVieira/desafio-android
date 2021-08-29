@@ -3,4 +3,42 @@
     <string name="contacts">Contacts</string>
     <string name="error">An error has occurred. Try again.</string>
     <string name="try_to_connect_again">Try to connect again</string>
+    <string name="social_media">Social Media</string>
+
+    <!-- Social -->
+    <!-- Github -->
+    <string name="github" translatable="false">Github</string>
+    <string name="my_github_user" translatable="false">/PierreVieira</string>
+    <string name="my_github_link" translatable="false">https://github.com/PierreVieira</string>
+    <!-- Linkedin -->
+    <string name="linkedin" translatable="false">LinkedIn</string>
+    <string name="my_linkedin_user" translatable="false">/pierre-vieira</string>
+    <string name="my_linkedin_link" translatable="false">https://linkedin.com/in/pierre-vieira</string>
+    <!-- Youtube -->
+    <string name="youtube" translatable="false">YouTube</string>
+    <string name="my_youtube_user" translatable="false">/PierreVieira</string>
+    <string name="my_youtube_link" translatable="false">https://youtube.com/channel/UCGF4Ag9zGp6newv-tkSkTcA</string>
+    <!-- Facebook -->
+    <string name="facebook" translatable="false">Facebook</string>
+    <string name="my_facebook_user" translatable="false">/pierrevieira3612</string>
+    <string name="my_facebook_link" translatable="false">https://www.facebook.com/pierrevieira3612</string>
+    <!-- Instagram -->
+    <string name="instagram" translatable="false">Instagram</string>
+    <string name="my_instagram_user" translatable="false">\@pierrevieira36</string>
+    <string name="my_instagram_link" translatable="false">https://www.instagram.com/pierrevieira36/</string>
+    <!-- Telegram -->
+    <string name="telegram" translatable="false">Telegram</string>
+    <string name="my_telegram_user" translatable="false">/@pierre_vieira</string>
+    <string name="my_telegram_link" translatable="false">https://t.me/pierre_vieira</string>
+    <!-- WhatsApp -->
+    <string name="whatsapp" translatable="false">WhatsApp</string>
+    <string name="my_whatsapp_user" translatable="false">(31) 99800-5262</string>
+    <string name="my_whatsapp_link" translatable="false">https://api.whatsapp.com/send?1=pt_BR&amp;phone=5531998005262</string>
+    <!-- Email -->
+    <string name="email" translatable="false">Email</string>
+    <string name="my_email_user" translatable="false">pierrevieiraggg@gmail.com</string>
+    <string name="my_email_link" translatable="false">mailto:pierrevieiraggg@gmail.com?body=Ol%C3%A1%20Pierre%2C%20vimos%20seu%20desafio%20do%20pipcpay</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 </resources>

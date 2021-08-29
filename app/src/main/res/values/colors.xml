@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2B2C2F</color>
-    <color name="colorPrimaryDark">#1D1E20</color>
-    <color name="colorAccent">#11C76F</color>
-    <color name="colorPrimaryLight">#ACB1BD</color>
-    <color name="colorDetail">#80FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="accent">#11C76F</color>
+    <color name="primaryLight">#ACB1BD</color>
+    <color name="green">#1B5E20</color>
+    <color name="green_dark">#003300</color>
+    <color name="green_light">#A5D6A7</color>
+    <color name="blue">#0288D1</color>
+    <color name="blue_dark">#005B9F</color>
+    <color name="blue_light">#81D4FA</color>
+    <!-- specific light theme colors -->
+    <color name="detail">#F2CDCDCD</color>
+    <color name="ripple">#40454545</color>
+    <color name="text_subtitle">#888</color>
 </resources>

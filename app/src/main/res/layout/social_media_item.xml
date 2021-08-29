@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="kotlin.jvm.functions.Function0" />
+
+        <import type="kotlin.Unit" />
+
+        <variable
+            name="socialMedia"
+            type="com.picpay.desafio.android.model.social.SocialMedia" />
+
+        <variable
+            name="onClickSocialMedia"
+            type="Function0&lt;Unit>" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="@{_ -> onClickSocialMedia.invoke()}"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:maxLines="1"
+                android:text="@{socialMedia.titleId}"
+                android:textAppearance="?attr/textAppearanceBody1"
+                tools:text="@string/linkedin" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/picture"
+                android:layout_width="@dimen/user_image_size"
+                android:layout_height="@dimen/user_image_size"
+                android:importantForAccessibility="no"
+                app:imageResource="@{socialMedia.imageResourceId}"
+                tools:src="@drawable/ic_linkedin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textSize="12sp"
+                android:text="@{socialMedia.subTitleId}"
+                android:textColor="@color/text_subtitle"
+                tools:text="@string/my_linkedin_user" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

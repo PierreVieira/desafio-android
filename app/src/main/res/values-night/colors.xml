@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- specific dark theme colors -->
+    <color name="detail">#80FFFFFF</color>
+    <color name="ripple">#40FFFFFF</color>
+    <color name="text_subtitle">#85FFFFFF</color>
+</resources>

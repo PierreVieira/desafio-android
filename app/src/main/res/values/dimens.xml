@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="loading_size">80dp</dimen>
+    <dimen name="user_image_size">52dp</dimen>
+    <dimen name="social_media_cad_margin">8dp</dimen>
+</resources>
