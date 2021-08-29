@@ -6,6 +6,7 @@ import androidx.core.net.toUri
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.facebook.shimmer.ShimmerFrameLayout
 import com.google.android.material.button.MaterialButton
 import com.picpay.desafio.android.R
 import com.picpay.desafio.android.model.User
@@ -15,6 +16,22 @@ import com.picpay.desafio.android.network.ApiStatus
 fun bindRecyclerView(recyclerView: RecyclerView, data: List<User>?) {
     val adapter = recyclerView.adapter as ContactsListAdapter
     adapter.submitList(data)
+}
+
+@BindingAdapter("shimmerVisibilityStatus")
+fun bindShimmerStatus(shimmerFrameLayout: ShimmerFrameLayout, status: ApiStatus) {
+    shimmerFrameLayout.visibility = if (status == ApiStatus.LOADING) {
+        shimmerFrameLayout.startShimmerAnimation()
+        View.VISIBLE
+    } else {
+        shimmerFrameLayout.stopShimmerAnimation()
+        View.GONE
+    }
+}
+
+@BindingAdapter("recyclerVisibilityStatus")
+fun bindRecyclerStatus(recyclerView: RecyclerView, status: ApiStatus) {
+    recyclerView.visibility = if (status == ApiStatus.DONE) View.VISIBLE else View.GONE
 }
 
 @BindingAdapter("apiStatus")

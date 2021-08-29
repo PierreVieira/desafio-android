@@ -15,10 +15,14 @@
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingEnd="@dimen/social_media_cad_margin"
+            android:paddingBottom="@dimen/social_media_cad_margin"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="2"
             tools:context=".ui.socialMedia.SocialMediaFragment"
-            tools:itemCount="6"
+            tools:ignore="RtlSymmetry"
+            tools:itemCount="8"
             tools:listitem="@layout/social_media_item" />
     </FrameLayout>
 

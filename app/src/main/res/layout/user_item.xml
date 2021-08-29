@@ -17,7 +17,7 @@
             type="Function0&lt;Unit>" />
     </data>
 
-    <androidx.appcompat.widget.LinearLayoutCompat
+    <LinearLayout
         android:id="@+id/user_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             android:importantForAccessibility="no"
             tools:src="@tools:sample/avatars" />
 
-        <androidx.appcompat.widget.LinearLayoutCompat
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
@@ -61,6 +61,6 @@
                 android:textColor="@color/text_subtitle"
                 android:textSize="12sp"
                 tools:text="@tools:sample/last_names" />
-        </androidx.appcompat.widget.LinearLayoutCompat>
-    </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+    </LinearLayout>
 </layout>

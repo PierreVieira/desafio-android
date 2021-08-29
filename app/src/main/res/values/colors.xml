@@ -10,8 +10,10 @@
     <color name="blue">#0288D1</color>
     <color name="blue_dark">#005B9F</color>
     <color name="blue_light">#81D4FA</color>
+    <color name="grey_eee">#EEE</color>
     <!-- specific light theme colors -->
     <color name="detail">#F2CDCDCD</color>
     <color name="ripple">#40454545</color>
     <color name="text_subtitle">#888</color>
+    <color name="placeholder">#D1D1D1</color>
 </resources>

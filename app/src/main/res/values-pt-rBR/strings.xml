@@ -5,4 +5,6 @@
     <string name="error">Ocorreu um erro. Tente novamente.</string>
     <string name="try_to_connect_again">Try to connect again</string>
     <string name="social_media">Redes sociais</string>
+    <string name="my_email_link">mailto:pierrevieiraggg@gmail.com?subject=Picpay%20Challenge&amp;body=Ol%C3%A1%20Pierre%2C%20vimos%20seu%20desafio%20do%20PicPay%20e%20gostar%C3%ADamos%20de%20bater%20um%20papo.%20Qual%20seria%20seu%20pr%C3%B3ximo%20hor%C3%A1rio%20dispon%C3%ADvel%3F%20%F0%9F%98%81</string>
+    <string name="my_whatsapp_link">https://api.whatsapp.com/send?phone=5531998005262&amp;text=Ol%C3%A1%20Pierre,%20vimos%20seu%20desafio%20do%20PicPay%20e%20gostar%C3%ADamos%20de%20bater%20um%20papo.%20Qual%20seria%20seu%20pr%C3%B3ximo%20hor%C3%A1rio%20dispon%C3%ADvel?%20%F0%9F%98%81</string>
 </resources>

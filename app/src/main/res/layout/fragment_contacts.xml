@@ -21,9 +21,45 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:scrollbars="vertical"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:contactListData="@{viewModel.users}"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:recyclerVisibilityStatus="@{viewModel.status}"
             tools:listitem="@layout/user_item" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shimmerVisibilityStatus="@{viewModel.status}"
+            tools:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--Include 10 shimmer effect-->
+                <include layout="@layout/user_item_shimmer" />
+
+                <include layout="@layout/user_item_shimmer" />
+
+                <include layout="@layout/user_item_shimmer" />
+
+                <include layout="@layout/user_item_shimmer" />
+
+                <include layout="@layout/user_item_shimmer" />
+
+                <include layout="@layout/user_item_shimmer" />
+
+                <include layout="@layout/user_item_shimmer" />
+
+                <include layout="@layout/user_item_shimmer" />
+
+                <include layout="@layout/user_item_shimmer" />
+
+                <include layout="@layout/user_item_shimmer" />
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
 
         <ImageView
             android:id="@+id/status_image"

@@ -18,48 +18,63 @@
             type="Function0&lt;Unit>" />
     </data>
 
-    <com.google.android.material.card.MaterialCardView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:onClick="@{_ -> onClickSocialMedia.invoke()}"
-        app:cardCornerRadius="8dp">
+        android:layout_height="wrap_content">
 
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/social_media_cad_margin"
+            android:layout_marginTop="@dimen/social_media_cad_margin"
+            android:onClick="@{_ -> onClickSocialMedia.invoke()}"
+            app:cardCornerRadius="8dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="16dp"
-                android:maxLines="1"
-                android:text="@{socialMedia.titleId}"
-                android:textAppearance="?attr/textAppearanceBody1"
-                tools:text="@string/linkedin" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/picture"
-                android:layout_width="@dimen/user_image_size"
-                android:layout_height="@dimen/user_image_size"
-                android:importantForAccessibility="no"
-                app:imageResource="@{socialMedia.imageResourceId}"
-                tools:src="@drawable/ic_linkedin" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="16dp"
+                    android:maxLines="1"
+                    android:text="@{socialMedia.titleId}"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    tools:text="@string/linkedin" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:maxLines="1"
-                android:padding="16dp"
-                android:textSize="12sp"
-                android:text="@{socialMedia.subTitleId}"
-                android:textColor="@color/text_subtitle"
-                tools:text="@string/my_linkedin_user" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/picture"
+                    android:layout_width="@dimen/social_media_image_size"
+                    android:layout_height="@dimen/social_media_image_size"
+                    android:importantForAccessibility="no"
+                    app:imageResource="@{socialMedia.imageResourceId}"
+                    tools:src="@drawable/ic_linkedin" />
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:padding="16dp"
+                    android:text="@{socialMedia.subTitleId}"
+                    android:textColor="@color/text_subtitle"
+                    android:textSize="12sp"
+                    tools:text="@string/my_linkedin_user" />
 
-    </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:visibility="gone">
+                <include layout="@layout/social_media_item_shimmer"/>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </FrameLayout>
 
 </layout>

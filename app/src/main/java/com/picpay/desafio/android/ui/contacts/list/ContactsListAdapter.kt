@@ -19,7 +19,7 @@ class ContactsListAdapter : ListAdapter<User, UserViewHolder>(DiffCallback) {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-        UserViewHolder(UserItemBinding.inflate(LayoutInflater.from(parent.context)))
+        UserViewHolder(UserItemBinding.inflate(LayoutInflater.from(parent.context), parent, false))
 
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         val user = getItem(position)

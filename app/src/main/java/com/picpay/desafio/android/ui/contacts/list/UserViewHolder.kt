@@ -17,14 +17,8 @@ class UserViewHolder(private val bindig: UserItemBinding) :
     fun bind(user: User) {
         bindig.apply {
             this.user = user
-            executePendingBindings()
             onClickUserItem = { searchOnGoogle(user.name) }
-            userContainer.apply {
-                layoutParams = LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.MATCH_PARENT,
-                    LinearLayout.LayoutParams.WRAP_CONTENT
-                )
-            }
+            executePendingBindings()
         }
     }
 

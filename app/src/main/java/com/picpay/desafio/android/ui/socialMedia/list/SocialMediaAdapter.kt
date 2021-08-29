@@ -10,7 +10,13 @@ class SocialMediaAdapter(private val dataset: List<SocialMedia>) :
     RecyclerView.Adapter<SocialMediaViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-        SocialMediaViewHolder(SocialMediaItemBinding.inflate(LayoutInflater.from(parent.context)))
+        SocialMediaViewHolder(
+            SocialMediaItemBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
 
     override fun onBindViewHolder(holder: SocialMediaViewHolder, position: Int) {
         holder.bind(dataset[position])

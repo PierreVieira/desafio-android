@@ -4,4 +4,5 @@
     <color name="detail">#80FFFFFF</color>
     <color name="ripple">#40FFFFFF</color>
     <color name="text_subtitle">#85FFFFFF</color>
+    <color name="placeholder">#85FFFFFF</color>
 </resources>
