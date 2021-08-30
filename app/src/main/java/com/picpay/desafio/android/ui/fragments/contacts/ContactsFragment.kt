@@ -23,7 +23,7 @@ class ContactsFragment : BaseFragment() {
         binding.apply {
             lifecycleOwner = this@ContactsFragment
             viewModel = this@ContactsFragment.contactsViewModel
-            recyclerView.adapter = ContactsListAdapter()
+            recyclerViewContacts.adapter = ContactsListAdapter()
         }
         return binding.root
     }

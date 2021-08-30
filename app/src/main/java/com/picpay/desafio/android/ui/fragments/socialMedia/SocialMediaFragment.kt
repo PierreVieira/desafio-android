@@ -17,7 +17,7 @@ class SocialMediaFragment : BaseFragment() {
         val binding = FragmentSocialMediaBinding.inflate(inflater)
         binding.apply {
             lifecycleOwner = this@SocialMediaFragment
-            recyclerView.apply {
+            recyclerViewSocial.apply {
                 setHasFixedSize(true)
                 adapter = SocialMediaAdapter(SocialMedia.data)
             }
