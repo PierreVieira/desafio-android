@@ -17,7 +17,7 @@ object SocialMediaItemsExpected {
         socialMediaLink = R.string.my_facebook_link,
         socialMediaType = SocialMediaType.FACEBOOK
     )
-    val github = ExpectedSocialMediaItem(
+    val gitHub = ExpectedSocialMediaItem(
         imageResourceId = R.drawable.ic_github,
         titleId = R.string.github,
         subTitleId = R.string.my_github_user,
@@ -31,7 +31,7 @@ object SocialMediaItemsExpected {
         socialMediaLink = R.string.my_instagram_link,
         socialMediaType = SocialMediaType.INSTAGRAM
     )
-    val linkedin = ExpectedSocialMediaItem(
+    val linkedIn = ExpectedSocialMediaItem(
         imageResourceId = R.drawable.ic_linkedin,
         titleId = R.string.linkedin,
         subTitleId = R.string.my_linkedin_user,
@@ -52,7 +52,7 @@ object SocialMediaItemsExpected {
         socialMediaLink = R.string.my_whatsapp_link,
         socialMediaType = SocialMediaType.WHATSAPP
     )
-    val youtube = ExpectedSocialMediaItem(
+    val youTube = ExpectedSocialMediaItem(
         imageResourceId = R.drawable.ic_youtube,
         titleId = R.string.youtube,
         subTitleId = R.string.my_youtube_user,
@@ -60,10 +60,10 @@ object SocialMediaItemsExpected {
         socialMediaType = SocialMediaType.EMAIL
     )
     val list = listOf(
-        github,
-        linkedin,
+        gitHub,
+        linkedIn,
         email,
-        youtube,
+        youTube,
         whatsApp,
         telegram,
         instagram,

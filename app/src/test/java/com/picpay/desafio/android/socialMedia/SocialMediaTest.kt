@@ -9,19 +9,19 @@ class SocialMediaTest {
     private val resultedList = SocialMedia.data
 
     @Test
-    fun checkFacebookItemData() = checkItemData(SocialMediaItemsExpected.facebook, FacebookItem())
+    fun checkFacebookItem() = checkItemData(SocialMediaItemsExpected.facebook, FacebookItem())
 
     @Test
     fun checkInstagramItem() = checkItemData(SocialMediaItemsExpected.instagram, InstagramItem())
 
     @Test
-    fun checkGithubItem() = checkItemData(SocialMediaItemsExpected.github, GithubItem())
+    fun checkGithubItem() = checkItemData(SocialMediaItemsExpected.gitHub, GitHubItem())
 
     @Test
-    fun checkYoutubeItem() = checkItemData(SocialMediaItemsExpected.youtube, YoutubeItem())
+    fun checkYoutubeItem() = checkItemData(SocialMediaItemsExpected.youTube, YouTubeItem())
 
     @Test
-    fun checkLinkedinItem() = checkItemData(SocialMediaItemsExpected.linkedin, LinkedinItem())
+    fun checkLinkedinItem() = checkItemData(SocialMediaItemsExpected.linkedIn, LinkedInItem())
 
     @Test
     fun checkTelegramItem() = checkItemData(SocialMediaItemsExpected.telegram, TelegramItem())

@@ -12,10 +12,10 @@ abstract class SocialMedia(
 ) {
     companion object {
         val data = listOf(
-            GithubItem(),
-            LinkedinItem(),
+            GitHubItem(),
+            LinkedInItem(),
             EmailItem(),
-            YoutubeItem(),
+            YouTubeItem(),
             WhatsAppItem(),
             TelegramItem(),
             InstagramItem(),
