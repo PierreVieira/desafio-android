@@ -6,4 +6,9 @@
         android:icon="@drawable/ic_people"
         android:title="@string/social_media"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/action_change_theme"
+        android:title="@string/change_theme"
+        android:icon="?attr/ic_theme"
+        app:showAsAction="always"/>
 </menu>

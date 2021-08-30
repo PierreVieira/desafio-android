@@ -1,4 +1,4 @@
-package com.picpay.desafio.android.ui.socialMedia.list
+package com.picpay.desafio.android.ui.fragments.socialMedia.list
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -23,5 +23,4 @@ class SocialMediaAdapter(private val dataset: List<SocialMedia>) :
     }
 
     override fun getItemCount() = dataset.size
-
 }

@@ -6,4 +6,6 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <attr name="ic_theme" format="reference"/>
+
 </resources>

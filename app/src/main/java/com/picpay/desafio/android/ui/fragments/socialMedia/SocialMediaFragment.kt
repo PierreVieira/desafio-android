@@ -1,15 +1,14 @@
-package com.picpay.desafio.android.ui.socialMedia
+package com.picpay.desafio.android.ui.fragments.socialMedia
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import android.view.*
+import com.picpay.desafio.android.R
 import com.picpay.desafio.android.databinding.FragmentSocialMediaBinding
 import com.picpay.desafio.android.model.social.SocialMedia
-import com.picpay.desafio.android.ui.socialMedia.list.SocialMediaAdapter
+import com.picpay.desafio.android.ui.fragments.BaseFragment
+import com.picpay.desafio.android.ui.fragments.socialMedia.list.SocialMediaAdapter
 
-class SocialMediaFragment : Fragment() {
+class SocialMediaFragment : BaseFragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -18,12 +17,16 @@ class SocialMediaFragment : Fragment() {
         val binding = FragmentSocialMediaBinding.inflate(inflater)
         binding.apply {
             lifecycleOwner = this@SocialMediaFragment
-            recyclerView.apply{
+            recyclerView.apply {
                 setHasFixedSize(true)
                 adapter = SocialMediaAdapter(SocialMedia.data)
             }
         }
         return binding.root
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.default_menu, menu)
     }
 
 }

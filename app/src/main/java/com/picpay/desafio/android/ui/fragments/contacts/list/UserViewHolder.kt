@@ -1,8 +1,7 @@
-package com.picpay.desafio.android.ui.contacts.list
+package com.picpay.desafio.android.ui.fragments.contacts.list
 
 import android.content.Intent
 import android.net.Uri
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.picpay.desafio.android.databinding.UserItemBinding
 import com.picpay.desafio.android.model.User

@@ -1,4 +1,4 @@
-package com.picpay.desafio.android.ui.contacts.list
+package com.picpay.desafio.android.ui.fragments.contacts.list
 
 import android.view.View
 import android.widget.ImageView

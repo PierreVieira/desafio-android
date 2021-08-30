@@ -7,13 +7,13 @@
 
         <variable
             name="viewModel"
-            type="com.picpay.desafio.android.ui.contacts.ContactsViewModel" />
+            type="com.picpay.desafio.android.ui.fragments.contacts.ContactsViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.contacts.ContactsFragment">
+        tools:context=".ui.fragments.contacts.ContactsFragment">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"

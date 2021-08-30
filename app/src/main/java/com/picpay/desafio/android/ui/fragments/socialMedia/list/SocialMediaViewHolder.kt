@@ -1,4 +1,4 @@
-package com.picpay.desafio.android.ui.socialMedia.list
+package com.picpay.desafio.android.ui.fragments.socialMedia.list
 
 import android.content.Intent
 import android.net.Uri
