@@ -1,11 +1,12 @@
 package com.picpay.desafio.android.ui.theme
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class ThemeViewModel : ViewModel() {
     private val _theme = MutableLiveData(ThemePreferences.getTheme())
-    val themeType get() = _theme
+    val themeType: LiveData<ThemeType> = _theme
 
     private fun setTheme(themeType: ThemeType) {
         if (_theme.value != themeType) {
