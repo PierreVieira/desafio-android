@@ -4,13 +4,17 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.picpay.desafio.android.network.Api
-import com.picpay.desafio.android.network.ApiStatus
 import com.picpay.desafio.android.model.User
+import com.picpay.desafio.android.network.ApiStatus
+import com.picpay.desafio.android.network.Repository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
-import java.lang.Exception
+import javax.inject.Inject
 
-class ContactsViewModel : ViewModel() {
+@HiltViewModel
+class ContactsViewModel @Inject constructor(
+    private val repository: Repository
+) : ViewModel() {
     private val _status = MutableLiveData<ApiStatus>()
     val status: LiveData<ApiStatus> = _status
     private val _users = MutableLiveData<List<User>>()
@@ -24,7 +28,7 @@ class ContactsViewModel : ViewModel() {
         viewModelScope.launch {
             _status.value = ApiStatus.LOADING
             try {
-                _users.value = Api.retrofitService.getUsers()
+                _users.value = repository.getUsers()
                 _status.value = ApiStatus.DONE
             } catch (e: Exception) {
                 _status.value = ApiStatus.ERROR

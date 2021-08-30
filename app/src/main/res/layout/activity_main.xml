@@ -12,5 +12,5 @@
     app:layout_constraintRight_toRightOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     app:navGraph="@navigation/nav_graph"
-    tools:context=".MainActivity"
+    tools:context=".ui.MainActivity"
     tools:layout="@layout/fragment_contacts" />

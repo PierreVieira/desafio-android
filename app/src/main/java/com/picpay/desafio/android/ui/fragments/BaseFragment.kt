@@ -5,7 +5,7 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.picpay.desafio.android.MainActivity
+import com.picpay.desafio.android.ui.MainActivity
 import com.picpay.desafio.android.R
 import java.lang.IllegalStateException
 

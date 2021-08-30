@@ -2,7 +2,7 @@ package com.picpay.desafio.android.ui.theme
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.picpay.desafio.android.MainActivity
+import com.picpay.desafio.android.ui.MainActivity
 
 object ThemePreferences {
     private const val THEME_KEY = "theme_key"

@@ -7,7 +7,9 @@ import com.picpay.desafio.android.R
 import com.picpay.desafio.android.databinding.FragmentContactsBinding
 import com.picpay.desafio.android.ui.fragments.BaseFragment
 import com.picpay.desafio.android.ui.fragments.contacts.list.ContactsListAdapter
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ContactsFragment : BaseFragment() {
 
     private val contactsViewModel: ContactsViewModel by viewModels()

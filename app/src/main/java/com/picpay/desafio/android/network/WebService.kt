@@ -8,8 +8,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 
 
-interface ApiService {
-
+interface WebService {
     companion object {
         private const val BASE_URL = "https://609a908e0f5a13001721b74e.mockapi.io/picpay/api/"
         private val moshi: Moshi = Moshi.Builder()

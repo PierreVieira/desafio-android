@@ -1,14 +1,14 @@
 package com.picpay.desafio.android
 
 import com.picpay.desafio.android.model.User
-import com.picpay.desafio.android.network.ApiService
+import com.picpay.desafio.android.network.WebService
 
 class ExampleService(
-    private val apiService: ApiService
+    private val webService: WebService
 ) {
 
     fun example(): List<User> {
-        val users = apiService.getUsers().execute()
+        val users = webService.getUsers().execute()
 
         return users.body() ?: emptyList()
     }

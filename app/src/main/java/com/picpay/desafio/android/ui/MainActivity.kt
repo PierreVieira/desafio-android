@@ -1,4 +1,4 @@
-package com.picpay.desafio.android
+package com.picpay.desafio.android.ui
 
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -7,9 +7,12 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.picpay.desafio.android.R
 import com.picpay.desafio.android.ui.theme.ThemePreferences
 import com.picpay.desafio.android.ui.theme.ThemeViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
     private lateinit var navController: NavController
