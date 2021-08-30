@@ -7,9 +7,9 @@ class ExampleService(
     private val webService: WebService
 ) {
 
-    fun example(): List<User> {
-        val users = webService.getUsers().execute()
-
-        return users.body() ?: emptyList()
-    }
+//    fun example(): List<User> {
+//        val users = webService.getUsers().execute()
+//
+//        return users.body() ?: emptyList()
+//    }
 }
